@@ -3,9 +3,9 @@ import { Switch } from 'react-router';
 import { BrowserRouter, Route } from "react-router-dom";
 import Footer from './Footer';
 import Header from './Header';
+import ActivitiesPage from './Pages/Activities';
 import TopPage from './Pages/Home';
 import ProductsPage from './Pages/Products';
-import SkillsPage from './Pages/Skills';
 import WorksPage from './Pages/Works';
 import './routes.css';
 import SideBar from './SideBar';
@@ -25,9 +25,9 @@ class App extends React.Component {
           <div className = "Content">
             <Switch>
               <Route exact={true} path='/' component={TopPage} />
-              <Route exact={true} path='/skills' component={SkillsPage} />
               <Route exact={true} path='/works' component={WorksPage} />
               <Route exact={true} path='/products' component={ProductsPage} />
+              <Route exact={true} path='/Activities' component={ActivitiesPage} />
             </Switch>
           </div>
           <div className = "Footer">

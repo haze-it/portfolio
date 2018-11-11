@@ -5,8 +5,8 @@ import './Pages.css';
 class App extends React.Component {
   public render() {
     return (
-      <div className = "Home">
-        Products
+      <div className = "Products">
+        <h1>Activities</h1>
       </div>
     );
   }

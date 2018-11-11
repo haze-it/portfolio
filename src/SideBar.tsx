@@ -12,7 +12,12 @@ class App extends React.Component<{}, SideBarState> {
 
   constructor() {
     super('');
-    this.state = { active: 'About', };
+    const path = location.pathname.slice(1);
+    if (path === '') {
+      this.state = { active: 'About' }
+    } else {
+      this.state = { active: path.charAt(0).toUpperCase() + path.slice(1)};
+    }
   }
 
   public render() {
@@ -25,11 +30,6 @@ class App extends React.Component<{}, SideBarState> {
               active={ this.state.active === 'About' }
               onClick={this.handleClick}
             />
-            <Menu.Item as={Link} to={'/skills'}
-              name = "Skills"
-              active={ this.state.active === 'Skills' }
-              onClick={this.handleClick}
-            />
             <Menu.Item as={Link} to={'/works'}
               name = "Works"
               active={ this.state.active === 'Works' }
@@ -40,8 +40,12 @@ class App extends React.Component<{}, SideBarState> {
               active={ this.state.active === 'Products' }
               onClick={this.handleClick}
             />
+            <Menu.Item as={Link} to={'/activities'}
+              name = "Activities"
+              active={ this.state.active === 'Activities' }
+              onClick={this.handleClick}
+            />
           </Menu>
-          
         </div>
       </div>
     );
