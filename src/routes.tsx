@@ -1,19 +1,41 @@
 import * as React from 'react';
-
-import logo from './logo.svg';
+import { Switch } from 'react-router';
+import { BrowserRouter, Route } from "react-router-dom";
+import Footer from './Footer';
+import Header from './Header';
+import TopPage from './Pages/Home';
+import ProductsPage from './Pages/Products';
+import SkillsPage from './Pages/Skills';
+import WorksPage from './Pages/Works';
+import './routes.css';
+import SideBar from './SideBar';
 
 class App extends React.Component {
   public render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
+      <BrowserRouter>
+      <div className = "Root">
+        <div className = "Header">
+          <Header />
+        </div>
+        <div className = "Main">
+          <div className = "Side">
+            <SideBar />
+          </div>
+          <div className = "Content">
+            <Switch>
+              <Route exact={true} path='/' component={TopPage} />
+              <Route exact={true} path='/skills' component={SkillsPage} />
+              <Route exact={true} path='/works' component={WorksPage} />
+              <Route exact={true} path='/products' component={ProductsPage} />
+            </Switch>
+          </div>
+          <div className = "Footer">
+            <Footer />
+          </div>
+        </div>
       </div>
+      </BrowserRouter>
     );
   }
 }
