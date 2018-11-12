@@ -4,6 +4,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import Footer from './Footer';
 import Header from './Header';
 import ActivitiesPage from './Pages/Activities';
+import CertificationsPage from './Pages/Certifications';
 import TopPage from './Pages/Home';
 import ProductsPage from './Pages/Products';
 import WorksPage from './Pages/Works';
@@ -27,6 +28,7 @@ class App extends React.Component {
               <Route exact={true} path='/' component={TopPage} />
               <Route exact={true} path='/works' component={WorksPage} />
               <Route exact={true} path='/products' component={ProductsPage} />
+              <Route exact={true} path='/certifications' component={CertificationsPage} />
               <Route exact={true} path='/Activities' component={ActivitiesPage} />
             </Switch>
           </div>

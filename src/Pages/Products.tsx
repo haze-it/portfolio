@@ -6,7 +6,8 @@ class App extends React.Component {
   public render() {
     return (
       <div className = "Products">
-        <h1>Activities</h1>
+        <h1>Products</h1>
+        <p>まだないよ＞＜</p>
       </div>
     );
   }

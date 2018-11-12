@@ -64,7 +64,7 @@ class App extends React.Component {
           </tr>
           <tr>
             <td>利用技術</td>
-            <td>MySQL</td>
+            <td>MySQL, CentOS, Selenium IDE</td>
           </tr>
         </table>
       </div>

@@ -40,6 +40,11 @@ class App extends React.Component<{}, SideBarState> {
               active={ this.state.active === 'Products' }
               onClick={this.handleClick}
             />
+            <Menu.Item as={Link} to={'/certifications'}
+              name = "Certifications"
+              active={ this.state.active === 'Certifications' }
+              onClick={this.handleClick}
+            />
             <Menu.Item as={Link} to={'/activities'}
               name = "Activities"
               active={ this.state.active === 'Activities' }
