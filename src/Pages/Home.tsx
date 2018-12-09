@@ -55,6 +55,34 @@ class App extends React.Component {
             <td><a href="mailto:haze.it.acc@gmail.com">haze.it.acc[at]gmail.com</a></td>
           </tr>
         </table>
+
+        <h2>Strength Finder</h2>
+        <table>
+          <tr>
+            <td>Blog: </td>
+            <td><a href="https://hazediary.hateblo.jp/entry/2018/12/09/133858" target="_blank">ストレングス・ファインダー2.0 受けた</a></td>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td>学習欲</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>内省</td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>自我</td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>目標志向</td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>未来志向</td>
+          </tr>
+        </table>
       </div>
     );
   }

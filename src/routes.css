@@ -27,7 +27,7 @@
 }
 .Content {
     background-color: #ffffff;
-    margin: 30px 100px 100px 250px;
+    margin: 30px 100px 200px 250px;
     top: 0px;
     width: 70%;
     height: 80vh;
@@ -38,5 +38,5 @@
     background-color: #ffffff;
     padding: 20px 0px 20px 0px;
     bottom: 0px;
-    position: relative;
+    /* position: relative; */
 }

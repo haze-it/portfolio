@@ -19,7 +19,7 @@ class App extends React.Component {
           </tr>
           <tr>
             <td>役割</td>
-            <td>Application Engineer (Back-End)</td>
+            <td>Application Engineer (Web Back-End + Front-End)</td>
           </tr>
           <tr>
             <td>利用技術</td>
