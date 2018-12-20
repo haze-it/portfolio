@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import Routes from './Routes';
+import Routes from './routes';
 
 ReactDOM.render(
   <Routes />,
