@@ -1,75 +1,80 @@
 import * as React from 'react';
-import 'semantic-ui-css/semantic.min.css';
-import './Pages.css';
+import styled from 'react-emotion';
+import {Headering1, Headering2, Headering4, TableStyle} from '../component/Components';
 
 class App extends React.Component {
   public render() {
     return (
-      <div className = "Home">
-        <h1>Current</h1>
-        <h2>株式会社Kaizen Platform</h2>
-        <table>
-          <tr>
-            <td>期間</td>
-            <td>2018.07 ~</td>
-          </tr>
-          <tr>
-            <td>所属</td>
-            <td>Production, Engineer Group</td>
-          </tr>
-          <tr>
-            <td>役割</td>
-            <td>Application Engineer (Web Back-End + Front-End)</td>
-          </tr>
-          <tr>
-            <td>利用技術</td>
-            <td>Ruby, Ruby on Rails / MySQL / Datadog APM</td>
-          </tr>
-        </table>
+      <Works>
+        <WorksTitle />
+        <CurrentTitle />
+        {Career(
+          '株式会社Kaizen Platform',
+          '2018.07 ~',
+          'Production, Engineer Group',
+          'Application Engineer (Web Back-End + Front-End)',
+          'Ruby, Ruby on Rails / MySQL / Datadog APM',
+        )}
 
-        <h1>Job Career</h1>
-        <h2>コマースリンク株式会社</h2>
-        <table>
-        <tr>
-            <td>期間</td>
-            <td>2017.08 ~ 2018.06</td>
-          </tr>
-          <tr>
-            <td>所属</td>
-            <td>システム部</td>
-          </tr>
-          <tr>
-            <td>役割</td>
-            <td>Engineer (Back-End + Infrastrcture)</td>
-          </tr>
-          <tr>
-            <td>利用技術</td>
-            <td>Perl / Node.js / Ruby / Chef / PostgreSQL / MySQL / AWS / GCP / LINE Messaging API / Digdag</td>
-          </tr>
-        </table>
-
-        <h2>ドコモ・システムズ株式会社</h2>
-        <table>
-        <tr>
-            <td>期間</td>
-            <td>2016.04 ~ 2017.07</td>
-          </tr>
-          <tr>
-            <td>所属</td>
-            <td>Webシステム開発部</td>
-          </tr>
-          <tr>
-            <td>役割</td>
-            <td>SE / Product Owner</td>
-          </tr>
-          <tr>
-            <td>利用技術</td>
-            <td>MySQL, CentOS, Selenium IDE</td>
-          </tr>
-        </table>
-      </div>
+        <CarrerTitle />
+        {Career(
+          'コマースリンク株式会社',
+          '2017.08 ~ 2018.06',
+          'システム部',
+          'Engineer (Back-End + Infrastrcture)',
+          'Perl / Node.js / Ruby / Chef / PostgreSQL / MySQL / AWS / GCP / LINE Messaging API / Digdag',
+        )}
+        {Career(
+          'ドコモ・システムズ株式会社',
+          '2016.04 ~ 2017.07',
+          'Webシステム開発部',
+          'SE / Product Owner',
+          'MySQL, CentOS, Selenium IDE',
+        )}
+      </Works>
     );
-  }
-}
+  };
+};
+
+const Works = styled('div')({
+});
+
+const WorksTitle = () => {
+  return <Headering1>Works</Headering1>
+};
+
+const CurrentTitle = () => {
+  return <Headering2>Current</Headering2>
+};
+
+const CarrerTitle = () => {
+  return <Headering2>Job Carrer</Headering2>
+};
+
+const Career = (company: string, period: string, dept: string, role: string, technology: string) => {
+  return <div>
+    <Headering4>{company}</Headering4>
+    <TableStyle>
+      <table>
+        <tr>
+          <td>期間: </td>
+          <td>{period}</td>
+        </tr>
+        <tr>
+          <td>所属: </td>
+          <td>{dept}</td>
+        </tr>
+        <tr>
+          <td>役割: </td>
+          <td>{role}</td>
+        </tr>
+        <tr>
+          <td>技術: </td>
+          <td>{technology}</td>
+        </tr>
+      </table>
+    </TableStyle>
+  </div>
+};
 
 export default App;

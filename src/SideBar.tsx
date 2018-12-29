@@ -2,11 +2,9 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css';
 import { Menu } from 'semantic-ui-react';
-import './SideBar.css';
-
 interface SideBarState {
   active?: string;
-}
+};
 
 class App extends React.Component<{}, SideBarState> {
 
@@ -17,46 +15,32 @@ class App extends React.Component<{}, SideBarState> {
       this.state = { active: 'About' }
     } else {
       this.state = { active: path.charAt(0).toUpperCase() + path.slice(1)};
-    }
-  }
+    };
+  };
 
   public render() {
     return (
       <div className = "SideBar">
-        <div className = "SideBar-icons">
-          <Menu pointing={true} secondary={true} vertical={true}>
-            <Menu.Item as={Link} to={'/'}
-              name = "About"
-              active={ this.state.active === 'About' }
-              onClick={this.handleClick}
-            />
-            <Menu.Item as={Link} to={'/works'}
-              name = "Works"
-              active={ this.state.active === 'Works' }
-              onClick={this.handleClick}
-            />
-            <Menu.Item as={Link} to={'/products'}
-              name = "Products"
-              active={ this.state.active === 'Products' }
-              onClick={this.handleClick}
-            />
-            <Menu.Item as={Link} to={'/certifications'}
-              name = "Certifications"
-              active={ this.state.active === 'Certifications' }
-              onClick={this.handleClick}
-            />
-            <Menu.Item as={Link} to={'/activities'}
-              name = "Activities"
-              active={ this.state.active === 'Activities' }
-              onClick={this.handleClick}
-            />
-          </Menu>
-        </div>
+        <Menu pointing={true} secondary={true} vertical={true}>
+          {this.SideBarItem('/'              , 'About'          )}
+          {this.SideBarItem('/works'         , 'Works'          )}
+          {this.SideBarItem('/products'      , 'Products'       )}
+          {this.SideBarItem('/certifications', 'Certifications' )}
+          {this.SideBarItem('/activities'    , 'Activities'     )}
+        </Menu>
       </div>
     );
-  }
+  };
+
+  private SideBarItem = (toLink: string, label: string) => {
+    return <Menu.Item as={Link} to={toLink}
+        name={label}
+        active={this.state.active === label}
+        onClick={this.handleClick}
+      />
+  };
 
   private handleClick = (e: any) => this.setState({ active: e.target.innerText });
-}
+};
 
 export default App;

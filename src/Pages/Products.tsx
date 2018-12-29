@@ -1,16 +1,28 @@
 import * as React from 'react';
-import 'semantic-ui-css/semantic.min.css';
-import './Pages.css';
+// import './Pages.css';
+import styled from 'react-emotion';
+import {Headering1, PlaneText} from '../component/Components';
 
 class App extends React.Component {
   public render() {
     return (
-      <div className = "Products">
-        <h1>Products</h1>
-        <p>まだないよ＞＜</p>
-      </div>
+      <Products>
+        <ProductsTitle />
+        <Contents />
+      </Products>
     );
-  }
-}
+  };
+};
+
+const Products = styled('div')({
+});
+
+const ProductsTitle = () => {
+  return <Headering1>Products</Headering1>
+};
+
+const Contents = () => {
+  return <PlaneText>まだないよ＞＜</PlaneText>
+};
 
 export default App;
