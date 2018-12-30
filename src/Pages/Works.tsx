@@ -13,7 +13,7 @@ class App extends React.Component {
           '2018.07 ~',
           'Production, Engineer Group',
           'Application Engineer (Web Back-End + Front-End)',
-          'Ruby, Ruby on Rails / MySQL / Datadog APM',
+          'Ruby, Ruby on Rails / React.js / MySQL / Datadog APM',
         )}
 
         <CarrerTitle />
