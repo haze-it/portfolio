@@ -24,7 +24,6 @@ class App extends React.Component<{}, SideBarState> {
         <Menu pointing={true} secondary={true} vertical={true}>
           {this.SideBarItem('/'              , 'About'          )}
           {this.SideBarItem('/works'         , 'Works'          )}
-          {this.SideBarItem('/products'      , 'Products'       )}
           {this.SideBarItem('/certifications', 'Certifications' )}
           {this.SideBarItem('/activities'    , 'Activities'     )}
         </Menu>

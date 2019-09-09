@@ -10,7 +10,6 @@ import SideBar from './SideBar';
 import TopPage from './Pages/Home';
 import ActivitiesPage from './Pages/Activities';
 import CertificationsPage from './Pages/Certifications';
-import ProductsPage from './Pages/Products';
 import WorksPage from './Pages/Works';
 
 class App extends React.Component {
@@ -43,7 +42,6 @@ const Routing = () => {
     <Switch>
       <Route exact={true} path='/' component={TopPage} />
       <Route exact={true} path='/works' component={WorksPage} />
-      <Route exact={true} path='/products' component={ProductsPage} />
       <Route exact={true} path='/certifications' component={CertificationsPage} />
       <Route exact={true} path='/Activities' component={ActivitiesPage} />
     </Switch>
