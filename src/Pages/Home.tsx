@@ -14,9 +14,6 @@ class App extends React.Component {
 
         <ContactsTitle />
         <ContactTable />
-
-        <StrengthFinderTitle />
-        <StrengthFinderTable />
       </Home>
     );
   }
@@ -31,10 +28,6 @@ const HomeTitle = () => {
 
 const ContactsTitle = () => {
   return <Headering2>Contacts</Headering2>
-}
-
-const StrengthFinderTitle = () => {
-  return <Headering2>Strength Finder</Headering2>
 }
 
 const Img = styled('img')({
@@ -57,11 +50,11 @@ const ProfileTable = () => {
       </tr>
       <tr>
         <td>Location</td>
-        <td>Tokyo (Old: Kyoto)</td>
+        <td>Tokyo</td>
       </tr>
       <tr>
         <td>Like</td>
-        <td>Sing, Beer(Corona, Guinness), Cat, etc.</td>
+        <td>Sing, Beer(Corona, Guinness, Craft Beer), Whiskey, Cat, etc.</td>
       </tr>
       <tr>
         <td>Roles</td>
@@ -93,37 +86,6 @@ const ContactTable = () => {
       <tr>
         <td>Mail</td>
         <td><a href="mailto:haze.it.acc@gmail.com">haze.it.acc[at]gmail.com</a></td>
-      </tr>
-    </table>
-  </TableStyle>
-};
-
-const StrengthFinderTable = () => {
-  return <TableStyle>
-    <table>
-      <tr>
-        <td>Blog: </td>
-        <td><a href="https://hazediary.hateblo.jp/entry/2018/12/09/133858" target="_blank">ストレングス・ファインダー2.0 受けた</a></td>
-      </tr>
-      <tr>
-        <td>1.</td>
-        <td>学習欲</td>
-      </tr>
-      <tr>
-        <td>2.</td>
-        <td>内省</td>
-      </tr>
-      <tr>
-        <td>3.</td>
-        <td>自我</td>
-      </tr>
-      <tr>
-        <td>4.</td>
-        <td>目標志向</td>
-      </tr>
-      <tr>
-        <td>5.</td>
-        <td>未来志向</td>
       </tr>
     </table>
   </TableStyle>
