@@ -9,14 +9,28 @@ class App extends React.Component {
         <WorksTitle />
         <CurrentTitle />
         {Career(
-          '株式会社Kaizen Platform',
-          '2018.07 ~',
-          'Production, Engineer Group',
-          'Application Engineer (Web Back-End + Front-End)',
-          'Ruby, Ruby on Rails / React.js / MySQL / Datadog APM',
+          'スマートキャンプ株式会社',
+          '2018.10 ~',
+          'Product Div.',
+          'Backend Engineer',
+          'Ruby, Ruby on Rails / Vue.js',
+        )}
+        {Career(
+          '株式会社クラウドワークス (業務委託)',
+          '2018.09 ~',
+          '新規事業チーム',
+          'Engineer',
+          'Ruby, Ruby on Rails / Vue.js / Nuxt.js / Firebase, firestore',
         )}
 
         <CarrerTitle />
+        {Career(
+          '株式会社Kaizen Platform',
+          '2018.07 ~ 2019.09',
+          'Production, Engineer Group',
+          'Application Engineer (Web Back-End + Front-End)',
+          'Ruby, Ruby on Rails / React.js / GraphQL / MySQL / Datadog APM / BigQuery',
+        )}
         {Career(
           'コマースリンク株式会社',
           '2017.08 ~ 2018.06',
