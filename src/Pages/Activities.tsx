@@ -10,7 +10,7 @@ class App extends React.Component {
         <PresentationTitle />
         {Presentation(
           'https://youth-engineer-mokumoku.connpass.com/event/147987/',
-          '(若手)エンジニアもくもく会 vol.18 @CrowdWorks',
+          '2019.10.05: (若手)エンジニアもくもく会 vol.18 @CrowdWorks',
           'https://docs.google.com/presentation/d/1mV4TSJxSXk_HtSHy8tPVF8Yum4j6ONNa6h5GjZl-dGU/edit?usp=sharing',
           'TypeScript 初級編',
         )}

@@ -60,6 +60,10 @@ const ProfileTable = () => {
         <td>Roles</td>
         <td>Web Application Engineer (Back-End)</td>
       </tr>
+      <tr>
+        <td>Biz name</td>
+        <td>はぜそふと (haze-soft)</td>
+      </tr>
     </table>
   </TableStyle>
 };
