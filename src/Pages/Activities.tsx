@@ -9,6 +9,12 @@ class App extends React.Component {
         <ActivitiesTitle />
         <PresentationTitle />
         {Presentation(
+          'https://youth-engineer-mokumoku.connpass.com/event/147987/',
+          '(若手)エンジニアもくもく会 vol.18 @CrowdWorks',
+          'https://docs.google.com/presentation/d/1mV4TSJxSXk_HtSHy8tPVF8Yum4j6ONNa6h5GjZl-dGU/edit?usp=sharing',
+          'TypeScript 初級編',
+        )}
+        {Presentation(
           'https://dark.connpass.com/event/110426/',
           '2018.12.22: だいたい新卒エンジニア交流会 vol.17',
           'https://docs.google.com/presentation/d/1JrUP19Wl8KFkNBB0woChE1MElG8SNlyjsbPgebYoRdU/edit?usp=sharing',
