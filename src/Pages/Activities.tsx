@@ -9,6 +9,12 @@ class App extends React.Component {
         <ActivitiesTitle />
         <PresentationTitle />
         {Presentation(
+          'https://s-dev-talks.connpass.com/event/152081/',
+          '2019.11.11: s-dev talks 〜サービス開発勉強会〜',
+          'https://docs.google.com/presentation/d/1GV9EmRIj3ut4mAcDf5NvNPw_zktWq1vXL6jU6jyqHKk/edit?usp=sharing',
+          'Onboarding改善のすすめ'
+        )}
+        {Presentation(
           'https://youth-engineer-mokumoku.connpass.com/event/147987/',
           '2019.10.05: (若手)エンジニアもくもく会 vol.18 @CrowdWorks',
           'https://docs.google.com/presentation/d/1mV4TSJxSXk_HtSHy8tPVF8Yum4j6ONNa6h5GjZl-dGU/edit?usp=sharing',
