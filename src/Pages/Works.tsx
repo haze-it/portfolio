@@ -9,18 +9,18 @@ class App extends React.Component {
         <WorksTitle />
         <CurrentTitle />
         {Career(
-          'スマートキャンプ株式会社',
+          'スマートキャンプ株式会社 (時短正社員)',
           '2018.10 ~',
           'Product Div.',
-          'Backend Engineer',
-          'Ruby, Ruby on Rails / Vue.js',
+          'Web Application Engineer',
+          'Ruby, Ruby on Rails / Vue.js / AWS',
         )}
         {Career(
           '株式会社クラウドワークス (業務委託)',
           '2018.09 ~',
-          '新規事業チーム',
-          'Engineer',
-          'Ruby, Ruby on Rails / Vue.js / Nuxt.js / Firebase, firestore',
+          '新規事業開発室: flint Team',
+          'Web Frontend Engineer',
+          'Vue.js / Nuxt.js / Firebase, firestore',
         )}
 
         <CarrerTitle />
