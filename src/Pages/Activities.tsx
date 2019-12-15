@@ -9,6 +9,12 @@ class App extends React.Component {
         <ActivitiesTitle />
         <PresentationTitle />
         {Presentation(
+          'https://heiseirb.github.io/kaigi01/',
+          '2019.12.14: 平成Ruby会議 01',
+          'https://speakerdeck.com/smartcamp/2019-dot-12-dot-14-ping-cheng-rubyhui-yi-01-sumatokiyanpu-suponsaltzi-liao',
+          'スマートキャンプ株式会社 スポンサーLT: スマートキャンプのBOXILについて'
+        )}
+        {Presentation(
           'https://smartcamp.connpass.com/event/155739/',
           '2019.12.06: B2B SaaSエンジニアMeetup - Sharing Issues #2',
           'https://drive.google.com/file/d/12Z6ocz08dhJueG--tCDJWzun3laPVH5X/view?usp=sharing',
