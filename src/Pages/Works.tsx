@@ -9,8 +9,8 @@ class App extends React.Component {
         <WorksTitle />
         <CurrentTitle />
         {Career(
-          'スマートキャンプ株式会社 (時短正社員)',
-          '2018.10 ~',
+          'スマートキャンプ株式会社 (時短正社員=>正社員)',
+          '2019.10 ~',
           'Product Div.',
           'Web Application Engineer',
           'Ruby, Ruby on Rails / Vue.js / AWS',
