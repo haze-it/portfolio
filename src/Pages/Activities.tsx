@@ -9,6 +9,12 @@ class App extends React.Component {
         <ActivitiesTitle />
         <PresentationTitle />
         {Presentation(
+          'https://note.com/techbowl/n/na074baccad55',
+          '2020.04.13: TechTrain LIVE#3 スマートキャンプ株式会社',
+          'https://speakerdeck.com/smartcamp/techtrain-live-smartcamp',
+          'TechTrain LIVE for Engineers: SMARTCAMP'
+        )}
+        {Presentation(
           'https://heiseirb.github.io/kaigi01/',
           '2019.12.14: 平成Ruby会議 01',
           'https://speakerdeck.com/smartcamp/2019-dot-12-dot-14-ping-cheng-rubyhui-yi-01-sumatokiyanpu-suponsaltzi-liao',
@@ -62,7 +68,7 @@ class App extends React.Component {
 };
 
 const PresentationTitle = () => {
-  return <Headering2>Briefing paper, History</Headering2>
+  return <Headering2>登壇・発表資料</Headering2>
 };
 
 const Activities = styled('div')({
